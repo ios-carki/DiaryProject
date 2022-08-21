@@ -13,6 +13,15 @@
 		C3FE025A28B25534007DD3B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3FE025828B25534007DD3B9 /* Main.storyboard */; };
 		C3FE025C28B25534007DD3B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3FE025B28B25534007DD3B9 /* Assets.xcassets */; };
 		C3FE025F28B25534007DD3B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3FE025D28B25534007DD3B9 /* LaunchScreen.storyboard */; };
+		C3FE026928B25845007DD3B9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FE026828B25845007DD3B9 /* BaseViewController.swift */; };
+		C3FE026C28B25886007DD3B9 /* MainDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FE026B28B25886007DD3B9 /* MainDiaryViewController.swift */; };
+		C3FE026E28B25938007DD3B9 /* MainDiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FE026D28B25938007DD3B9 /* MainDiaryView.swift */; };
+		C3FE027028B25948007DD3B9 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FE026F28B25948007DD3B9 /* BaseView.swift */; };
+		C3FE027328B25A93007DD3B9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C3FE027228B25A93007DD3B9 /* SnapKit */; };
+		C3FE027628B260CA007DD3B9 /* PhotoPickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FE027528B260CA007DD3B9 /* PhotoPickViewController.swift */; };
+		C3FE027828B260D5007DD3B9 /* PhotoPickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FE027728B260D5007DD3B9 /* PhotoPickView.swift */; };
+		C3FE027A28B27A6E007DD3B9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C3FE027928B27A6E007DD3B9 /* .gitignore */; };
+		C3FE027D28B27A98007DD3B9 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FE027C28B27A98007DD3B9 /* APIKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,14 @@
 		C3FE025B28B25534007DD3B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3FE025E28B25534007DD3B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3FE026028B25534007DD3B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3FE026828B25845007DD3B9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C3FE026B28B25886007DD3B9 /* MainDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDiaryViewController.swift; sourceTree = "<group>"; };
+		C3FE026D28B25938007DD3B9 /* MainDiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDiaryView.swift; sourceTree = "<group>"; };
+		C3FE026F28B25948007DD3B9 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		C3FE027528B260CA007DD3B9 /* PhotoPickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickViewController.swift; sourceTree = "<group>"; };
+		C3FE027728B260D5007DD3B9 /* PhotoPickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickView.swift; sourceTree = "<group>"; };
+		C3FE027928B27A6E007DD3B9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		C3FE027C28B27A98007DD3B9 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3FE027328B25A93007DD3B9 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +74,11 @@
 		C3FE025128B25534007DD3B9 /* DiaryProject */ = {
 			isa = PBXGroup;
 			children = (
+				C3FE027B28B27A89007DD3B9 /* Resource */,
+				C3FE027928B27A6E007DD3B9 /* .gitignore */,
+				C3FE027428B260B4007DD3B9 /* PhotoPick */,
+				C3FE026A28B25863007DD3B9 /* Diary */,
+				C3FE026728B25823007DD3B9 /* Utility */,
 				C3FE025228B25534007DD3B9 /* AppDelegate.swift */,
 				C3FE025428B25534007DD3B9 /* SceneDelegate.swift */,
 				C3FE025628B25534007DD3B9 /* ViewController.swift */,
@@ -65,6 +88,41 @@
 				C3FE026028B25534007DD3B9 /* Info.plist */,
 			);
 			path = DiaryProject;
+			sourceTree = "<group>";
+		};
+		C3FE026728B25823007DD3B9 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C3FE026828B25845007DD3B9 /* BaseViewController.swift */,
+				C3FE026F28B25948007DD3B9 /* BaseView.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		C3FE026A28B25863007DD3B9 /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				C3FE026B28B25886007DD3B9 /* MainDiaryViewController.swift */,
+				C3FE026D28B25938007DD3B9 /* MainDiaryView.swift */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		C3FE027428B260B4007DD3B9 /* PhotoPick */ = {
+			isa = PBXGroup;
+			children = (
+				C3FE027528B260CA007DD3B9 /* PhotoPickViewController.swift */,
+				C3FE027728B260D5007DD3B9 /* PhotoPickView.swift */,
+			);
+			path = PhotoPick;
+			sourceTree = "<group>";
+		};
+		C3FE027B28B27A89007DD3B9 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C3FE027C28B27A98007DD3B9 /* APIKey.swift */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +141,9 @@
 			dependencies = (
 			);
 			name = DiaryProject;
+			packageProductDependencies = (
+				C3FE027228B25A93007DD3B9 /* SnapKit */,
+			);
 			productName = DiaryProject;
 			productReference = C3FE024F28B25534007DD3B9 /* DiaryProject.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +172,9 @@
 				Base,
 			);
 			mainGroup = C3FE024628B25534007DD3B9;
+			packageReferences = (
+				C3FE027128B25A93007DD3B9 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = C3FE025028B25534007DD3B9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +189,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3FE027A28B27A6E007DD3B9 /* .gitignore in Resources */,
 				C3FE025F28B25534007DD3B9 /* LaunchScreen.storyboard in Resources */,
 				C3FE025C28B25534007DD3B9 /* Assets.xcassets in Resources */,
 				C3FE025A28B25534007DD3B9 /* Main.storyboard in Resources */,
@@ -138,7 +203,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3FE027628B260CA007DD3B9 /* PhotoPickViewController.swift in Sources */,
+				C3FE026C28B25886007DD3B9 /* MainDiaryViewController.swift in Sources */,
+				C3FE026E28B25938007DD3B9 /* MainDiaryView.swift in Sources */,
 				C3FE025728B25534007DD3B9 /* ViewController.swift in Sources */,
+				C3FE027D28B27A98007DD3B9 /* APIKey.swift in Sources */,
+				C3FE027828B260D5007DD3B9 /* PhotoPickView.swift in Sources */,
+				C3FE026928B25845007DD3B9 /* BaseViewController.swift in Sources */,
+				C3FE027028B25948007DD3B9 /* BaseView.swift in Sources */,
 				C3FE025328B25534007DD3B9 /* AppDelegate.swift in Sources */,
 				C3FE025528B25534007DD3B9 /* SceneDelegate.swift in Sources */,
 			);
@@ -293,6 +365,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +377,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,6 +394,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +406,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +432,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C3FE027128B25A93007DD3B9 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C3FE027228B25A93007DD3B9 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3FE027128B25A93007DD3B9 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C3FE024728B25534007DD3B9 /* Project object */;
 }
